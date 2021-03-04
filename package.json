@@ -1,0 +1,25 @@
+{
+  "name": "docred-test",
+  "version": "1.0.0",
+  "description": "Este es un test para determinar conocimientos en Frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Esteban-Ladino/frontend-assigment.git"
+  },
+  "keywords": [
+    "docred",
+    "reactJS",
+    "styled-components",
+    "prettier"
+  ],
+  "author": "Esteban Ladino <esteban.ladino.927@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Esteban-Ladino/frontend-assigment/issues"
+  },
+  "homepage": "https://github.com/Esteban-Ladino/frontend-assigment#readme"
+}
