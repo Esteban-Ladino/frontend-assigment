@@ -15,6 +15,11 @@ export const StyledArticle = styled.article`
     margin: 0;
     width: auto;
   }
+  @media (max-width: 768px) {
+    & p {
+      font-size: 16px;
+    }
+  }
 `
 
 export const Hero = styled.figure`
