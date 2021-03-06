@@ -4,6 +4,7 @@ import { theme } from '@styles/Theme'
 import { Container } from './styles'
 import { Header } from '../components/Header'
 import { Main } from '../components/Main'
+import { Footer } from '../components/Footer'
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
       <Container>
         <Header />
         <Main />
+        <Footer />
       </Container>
     </ThemeProvider>
   )
