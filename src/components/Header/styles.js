@@ -13,6 +13,16 @@ export const StyledHeader = styled.header`
       height: 65px;
     }
   }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: auto;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
 `
 
 export const Input = styled.form`
@@ -46,6 +56,12 @@ export const Input = styled.form`
       color: ${({ theme }) => theme.colorGray};
     }
   }
+
+  @media (max-width: 1024px) {
+    width: 300px;
+    height: 32px;
+    justify-self: center;
+  }
 `
 
 export const Menu = styled.a`
@@ -62,6 +78,19 @@ export const Menu = styled.a`
   & :hover {
     border-radius: 5px;
     background: #d1e3f04d;
+  }
+
+  @media (max-width: 1024px) {
+    & svg {
+      width: 25px;
+    }
+  }
+`
+
+export const BurguerMenu = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
   }
 `
 
@@ -108,5 +137,13 @@ export const UserSection = styled.div`
       border-radius: 5px;
       background: #d1e3f04d;
     }
+  }
+  @media (max-width: 1024px) {
+    & svg {
+      width: 25px;
+    }
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `
