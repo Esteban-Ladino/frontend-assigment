@@ -3,11 +3,11 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyles = createGlobalStyle`
   html,
   body {
+    background-color: ${({ theme }) => theme.backgroundColor};
     font-family: Roboto, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: ${({ theme }) => theme.backgroundColor};
   }
 
   * {
@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     color: inherit;
   }
 
-  ol, ul {
+  ol, ul, li {
     list-style: none;
   }
 

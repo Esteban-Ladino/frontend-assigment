@@ -17,16 +17,16 @@ export const StyledHeader = styled.header`
 
 export const Input = styled.form`
   display: flex;
-  height: 35px;
   width: 340px;
-  background: white;
+  height: 35px;
   border-radius: 13px 0 13px 0;
+  background: white;
   & button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     width: 40px;
+    height: 100%;
     background-color: transparent;
     cursor: pointer;
     & svg {
@@ -34,11 +34,11 @@ export const Input = styled.form`
     }
   }
   & input {
+    outline: none;
     padding-left: 10px;
     width: 80%;
     border: none;
     border-left: 2px solid ${({ theme }) => theme.colorBlue};
-    outline: none;
     font-family: Roboto, sans-serif;
     font-size: 15px;
     & ::placeholder {
@@ -50,29 +50,29 @@ export const Input = styled.form`
 
 export const Menu = styled.a`
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  width: 90px;
-  height: 40px;
+  align-items: center;
   margin-left: 40px;
   padding: 5px;
+  width: 90px;
+  height: 40px;
+  cursor: pointer;
   font-size: 15px;
   transition: 0.3s;
-  cursor: pointer;
   & :hover {
-    background: #d1e3f04d;
     border-radius: 5px;
+    background: #d1e3f04d;
   }
 `
 
 export const UserSection = styled.div`
   display: flex;
   grid-column-start: 6;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  padding-left: 30px;
   width: 230px;
   height: 55px;
-  padding-left: 30px;
   border-left: 2px solid ${({ theme }) => theme.highlightBlue};
   & a {
     cursor: pointer;
@@ -83,13 +83,13 @@ export const UserSection = styled.div`
       position: absolute;
       top: -5px;
       right: -5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 17px;
       height: 17px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: ${({ theme }) => theme.colorGreen};
       border-radius: 50%;
+      background-color: ${({ theme }) => theme.colorGreen};
       font-size: 11px;
     }
   }
@@ -98,15 +98,15 @@ export const UserSection = styled.div`
     align-items: center;
     padding: 5px;
     & img {
-      height: 35px;
       width: 35px;
+      height: 35px;
       border: 2px solid white;
       border-radius: 50%;
     }
     transition: 0.3s;
     & :hover {
-      background: #d1e3f04d;
       border-radius: 5px;
+      background: #d1e3f04d;
     }
   }
 `
