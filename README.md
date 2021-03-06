@@ -35,3 +35,17 @@ Puntos extras:
 - Unit testing.
 - Linting y Prettier
 - Docker
+
+-----
+## Installation
+To install this project just type
+
+    $ npm install
+
+To execute type
+
+    $ npm run start
+
+To build type
+
+    $ npm run build
