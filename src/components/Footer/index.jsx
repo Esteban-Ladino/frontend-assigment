@@ -8,9 +8,9 @@ export const Footer = () => {
         <img src={Logo} alt='DocRed Logo' />
       </figure>
       <ul>
-        <li><a>Preguntas frecuentes</a></li>
-        <li><a>Contáctanos</a></li>
-        <li><a>Información</a></li>
+        <li><a href='#'>Preguntas frecuentes</a></li>
+        <li><a href='#'>Contáctanos</a></li>
+        <li><a href='#'>Información</a></li>
         <li>DocRed © 2019. Todos los derechos reservados</li>
       </ul>
     </StyledFooter>

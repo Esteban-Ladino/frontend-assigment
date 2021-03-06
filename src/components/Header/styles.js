@@ -64,9 +64,9 @@ export const Input = styled.form`
   }
 
   @media (max-width: 1024px) {
+    justify-self: center;
     width: 300px;
     height: 32px;
-    justify-self: center;
   }
   @media (max-width: 600px) {
     grid-column: 1 / 4;

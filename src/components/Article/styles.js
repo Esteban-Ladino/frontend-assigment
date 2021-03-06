@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const StyledArticle = styled.article`
+  margin-right: 10px;
   padding: 30px;
   width: 1000px;
-  margin-right: 10px;
   border-radius: 10px;
   background: ${({ theme }) => theme.colorWhite};
   & p {
@@ -62,6 +62,7 @@ export const Button = styled.button`
   height: 30px;
   border-radius: 12px 0 12px;
   background-color: ${({ theme }) => theme.colorGreen};
+  cursor: pointer;
   color: white;
 `
 

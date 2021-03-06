@@ -18,9 +18,9 @@ export const ModalStyles = createGlobalStyle`
     position: fixed;
     z-index: 100;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
+    left: 0;
     background: #5050507d;
   }
 `
@@ -28,16 +28,16 @@ export const ModalStyles = createGlobalStyle`
 export const UserSection = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   & div {
     display: flex;
     align-items: center;
+    padding: 20px;
     border-bottom: 1px solid #EEEEEE;
     background-color: #FAFAFA;
-    padding: 20px;
     & figure img {
       margin-right: 20px;
       width: 70px;

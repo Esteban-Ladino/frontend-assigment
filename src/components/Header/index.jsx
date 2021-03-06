@@ -1,5 +1,5 @@
 import Logo from '@images/Logo.png'
-import profilePhoto from '@images/profilePhoto.jpg'
+import defaultPhoto from '@images/profilePhoto.jpg'
 import { Input, Menu, StyledHeader, UserSection, BurguerMenu } from './styles'
 
 import {
@@ -13,7 +13,12 @@ import {
 import { ModalMenu } from '../ModalMenu'
 import { useState } from 'react'
 
-export const Header = () => {
+export const Header = (props) => {
+  const {
+    profilePhoto = defaultPhoto,
+    notificationsNum = 1
+  } = props
+
   const [openModal, setOpenModal] = useState(false)
   const handleOpenModal = () => setOpenModal(!openModal)
 
@@ -38,7 +43,7 @@ export const Header = () => {
       <UserSection>
         <a>
           <FiBell size='28' />
-          <span>1</span>
+          <span>{notificationsNum}</span>
         </a>
         <a>
           <img src={profilePhoto} alt='User Profile Photo' />

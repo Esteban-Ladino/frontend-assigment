@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -31,7 +32,13 @@ module.exports = {
         }
       },
       {
-        test: /\.(jpg|png|gif|svg)$/,
+        test: /.html$/,
+        use: [
+          { loader: 'html-loader' }
+        ]
+      },
+      {
+        test: /\.(jpg|png|gif|svg|ico)$/,
         type: 'asset/resource'
       }
     ]
@@ -40,7 +47,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: './public/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      favicon: './public/favicon.ico'
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'public/article.json'),
+          to: 'public'
+        }
+      ]
     })
   ],
   devServer: {

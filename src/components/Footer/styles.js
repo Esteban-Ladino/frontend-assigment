@@ -22,8 +22,11 @@ export const StyledFooter = styled.footer`
     & li:last-child {
       opacity: 0.5;
     }
+    & a {
+      cursor: pointer;
+    }
   }
-  @media (max-width: 1024px) {}
+
   @media (max-width: 600px) {
     grid-template-rows: repeat(2, 1fr);
     height: auto;

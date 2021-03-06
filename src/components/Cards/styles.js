@@ -18,8 +18,8 @@ export const Container = styled.aside`
   @media (max-width: 1024px) {
     margin-top: 30px;
     & h5 {
-      font-size: 18px;
       padding-left: 20px;
+      font-size: 18px;
       & div {
         width: 50%;
         height: 3px;
@@ -39,8 +39,8 @@ export const Section = styled.section`
   border-radius: 6px;
   @media (max-width: 1024px) {
     grid-template-columns: repeat(auto-fill, 335px);
-    justify-items: center;
     grid-gap: 15px;
     justify-content: center;
+    justify-items: center;
   }
 `
