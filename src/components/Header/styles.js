@@ -23,6 +23,12 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     padding: 0 20px;
   }
+  @media (max-width: 600px) {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    justify-items: end;
+    height: auto;
+  }
 `
 
 export const Input = styled.form`
@@ -62,6 +68,11 @@ export const Input = styled.form`
     height: 32px;
     justify-self: center;
   }
+  @media (max-width: 600px) {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    width: 70%;
+  }
 `
 
 export const Menu = styled.a`
@@ -81,6 +92,7 @@ export const Menu = styled.a`
   }
 
   @media (max-width: 1024px) {
+    margin: 0;
     & svg {
       width: 25px;
     }
@@ -139,6 +151,7 @@ export const UserSection = styled.div`
     }
   }
   @media (max-width: 1024px) {
+    padding: 0;
     & svg {
       width: 25px;
     }
