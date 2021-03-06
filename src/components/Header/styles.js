@@ -35,7 +35,7 @@ export const Input = styled.form`
   display: flex;
   width: 340px;
   height: 35px;
-  border-radius: 13px 0 13px 0;
+  border-radius: 13px 0;
   background: white;
   & button {
     display: flex;

@@ -3,12 +3,17 @@ import styled from 'styled-components'
 export const StyledArticle = styled.article`
   padding: 30px;
   width: 1000px;
+  margin-right: 10px;
   border-radius: 10px;
   background: ${({ theme }) => theme.colorWhite};
   & p {
     margin-bottom: 35px;
     font-size: 17.5px;
     line-height: 28px;
+  }
+  @media (max-width: 1024px) {
+    margin: 0;
+    width: auto;
   }
 `
 
@@ -32,6 +37,9 @@ export const Hero = styled.figure`
     font-weight: 500;
     text-transform: uppercase;
     color: white;
+  }
+  @media (max-width: 1024px) {
+    height: auto;
   }
 `
 
@@ -104,5 +112,10 @@ export const Actions = styled.div`
       margin-right: 5px;
       color: ${({ theme }) => theme.highlightBlue};
     }
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    min-width: 283px;
   }
 `

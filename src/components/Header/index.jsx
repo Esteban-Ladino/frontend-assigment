@@ -10,7 +10,7 @@ import {
   FiSearch,
   FiMenu
 } from 'react-icons/fi'
-import { ModalMenu } from '../Modal'
+import { ModalMenu } from '../ModalMenu'
 import { useState } from 'react'
 
 export const Header = () => {

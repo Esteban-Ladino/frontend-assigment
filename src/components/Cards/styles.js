@@ -15,6 +15,19 @@ export const Container = styled.aside`
       color: transparent;
     }
   }
+  @media (max-width: 1024px) {
+    margin-top: 30px;
+    & h5 {
+      font-size: 18px;
+      padding-left: 20px;
+      & div {
+        width: 50%;
+        height: 3px;
+        background: #66A6D6;
+        color: transparent;
+      }
+    }
+  }
 `
 
 export const Section = styled.section`
@@ -24,4 +37,10 @@ export const Section = styled.section`
   overflow: hidden;
   height: fit-content;
   border-radius: 6px;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(auto-fill, 335px);
+    justify-items: center;
+    grid-gap: 15px;
+    justify-content: center;
+  }
 `
