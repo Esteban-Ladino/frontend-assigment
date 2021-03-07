@@ -5,6 +5,7 @@ export const StyledHeader = styled.header`
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
   height: 81px;
+  box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.15);
   background: ${({ theme }) => theme.colorBlue};
   color: white;
   & figure {
